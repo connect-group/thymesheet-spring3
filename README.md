@@ -3,6 +3,15 @@ thymesheet-spring3
 
 Thymesheet integration module for Spring 3
 
+# Maven
+
+		<dependency>
+			<groupId>com.connect-group</groupId>
+			<artifactId>thymesheet-spring3</artifactId>
+			<version>2.1.0-beta2</version>
+		</dependency>
+
+# Spring Configuration
 
     <bean id="templateEngine"
           class="com.connect_group.thymesheet.spring3.SpringThymesheetTemplateEngine">
