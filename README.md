@@ -8,7 +8,7 @@ Thymesheet integration module for Spring 3
 		<dependency>
 			<groupId>com.connect-group</groupId>
 			<artifactId>thymesheet-spring3</artifactId>
-			<version>2.1.0-beta2</version>
+			<version>2.1.0</version>
 		</dependency>
 
 # Spring Configuration
