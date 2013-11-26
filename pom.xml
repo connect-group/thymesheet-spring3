@@ -10,7 +10,7 @@
 
 	<groupId>com.connect-group</groupId>
 	<artifactId>thymesheet-spring3</artifactId>
-	<version>2.1.0</version>
+	<version>2.1.1</version>
 	<packaging>jar</packaging>
 
 	<name>thymesheet-spring3</name>
@@ -73,13 +73,13 @@
 		<dependency>
 			<groupId>org.thymeleaf</groupId>
 			<artifactId>thymeleaf-spring3</artifactId>
-			<version>2.1.0.RELEASE</version>
+			<version>2.1.1.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.connect-group</groupId>
 			<artifactId>thymesheet</artifactId>
-			<version>2.1.0</version>
+			<version>2.1.1</version>
 		</dependency>
 
 		<dependency>
