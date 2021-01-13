@@ -10,7 +10,7 @@
 
 	<groupId>com.connect-group</groupId>
 	<artifactId>thymesheet-spring3</artifactId>
-	<version>2.1.2</version>
+	<version>2.2.0</version>
 	<packaging>jar</packaging>
 
 	<name>thymesheet-spring3</name>
@@ -59,7 +59,9 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<springframework.version>3.1.2.RELEASE</springframework.version>
+    <nexus-staging-plugin.version>1.6.4</nexus-staging-plugin.version>
+    <nexus-staging-plugin.nexusUrl>https://oss.sonatype.org/</nexus-staging-plugin.nexusUrl>
+		<springframework.version>3.2.18.RELEASE</springframework.version>
 	</properties>
 
 	<dependencies>
@@ -73,13 +75,13 @@
 		<dependency>
 			<groupId>org.thymeleaf</groupId>
 			<artifactId>thymeleaf-spring3</artifactId>
-			<version>2.1.2.RELEASE</version>
+			<version>2.1.6.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.connect-group</groupId>
 			<artifactId>thymesheet</artifactId>
-			<version>2.1.2</version>
+			<version>2.2.0</version>
 		</dependency>
 
 		<dependency>
@@ -99,4 +101,20 @@
 		</dependency>
 
 	</dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>${nexus-staging-plugin.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>sonatype-nexus-staging</serverId>
+          <nexusUrl>${nexus-staging-plugin.nexusUrl}</nexusUrl>
+          <stagingProfileId>14b1865cd4eab2</stagingProfileId>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
