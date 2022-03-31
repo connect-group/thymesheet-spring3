@@ -61,7 +61,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <nexus-staging-plugin.version>1.6.4</nexus-staging-plugin.version>
     <nexus-staging-plugin.nexusUrl>https://oss.sonatype.org/</nexus-staging-plugin.nexusUrl>
-		<springframework.version>3.2.18.RELEASE</springframework.version>
+		<springframework.version>5.3.18</springframework.version>
 	</properties>
 
 	<dependencies>
